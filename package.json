@@ -1,0 +1,40 @@
+{
+  "name": "docker-kubernetes-jenkins",
+  "version": "1.0.0",
+  "description": "Deploy a Node JS on kubernetes using Jenkins and Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start app.js --watch --no-daemon",
+    "stop": "pm2 stop app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helabenkhalfallah/node-docker-kubernetes-jenkins.git"
+  },
+  "keywords": [
+    "node",
+    "kubernetes",
+    "docker",
+    "jenkins"
+  ],
+  "author": "Hela Ben Khalfallah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helabenkhalfallah/node-docker-kubernetes-jenkins/issues"
+  },
+  "homepage": "https://github.com/helabenkhalfallah/node-docker-kubernetes-jenkins#readme",
+  "devDependencies": {
+    "eslint": "=7.29.0",
+    "eslint-config-google": "=0.14.0"
+  },
+  "dependencies": {
+    "cookie-parser": "=1.4.4",
+    "debug": "=2.6.9",
+    "express": "=4.17.1",
+    "http-errors": "=1.6.3",
+    "morgan": "=1.9.1",
+    "pm2": "^5.1.0",
+    "pug": "=2.0.0-beta11"
+  }
+}
