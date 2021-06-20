@@ -1,8 +1,4 @@
 pipeline {
-    stage('Initialize'){
-        def dockerHome = tool 'dockerci'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
     agent {
         docker {
             image 'node:lts-buster-slim' 
